@@ -32,6 +32,16 @@ The following **optional** features are implemented:
 * [ ] User can **select "Comment from detail view to react to an event**
 
 
+Here's a walkthrough of implemented user stories:
+
+<img src='https://github.com/ALETEMAYITI/aletemayiti/blob/master/alete_1%5B1%5D.png' title='Login' width='' alt='Login' />
+<img src='https://github.com/ALETEMAYITI/aletemayiti/blob/master/alet-rejis%5B1%5D.png' title='Register' width='' alt='Register' />
+<img src='https://github.com/ALETEMAYITI/aletemayiti/blob/master/anrejistre%5B1%5D.png' title='Post Alert' width='' alt='Post Alert' />
+<img src='https://github.com/ALETEMAYITI/aletemayiti/blob/master/alete_ayiti%5B1%5D.png' title='Timeline' width='' alt='Timeline' />
+
+
+
+
 ## License
 
     Copyright [2018] [Harry Claude DELICE, Ritchy CHARLES, Elie MARSEILLE]
