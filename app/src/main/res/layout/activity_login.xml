@@ -63,7 +63,9 @@
         android:text="KONEKTE"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:onClick="btnKonekte"
+        />
 
     <TextView
         android:id="@+id/tvforget"

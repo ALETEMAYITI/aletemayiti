@@ -20,19 +20,28 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_login);
 
         etUserName = (EditText) findViewById(R.id.etUserName);
-        etPaskod = (EditText) findViewById(R.id.etKonfPaskod);
+        etPaskod = (EditText) findViewById(R.id.etPaskordKonek);
         btnKonekte = (Button) findViewById(R.id.btnKonekte);
         tvRegisterLink = (TextView)findViewById(R.id.tvRegisterLink);
 
-        btnKonekte.setOnClickListener(this);
+       // btnKonekte.setOnClickListener(this);
         tvRegisterLink.setOnClickListener(this);
     }
+
+    public void btnKonekte(View view){
+        String user = etUserName.getText().toString();
+        String pass = etPaskod.getText().toString();
+
+        connection ct = new connection(this);
+        ct.execute(user,pass);
+    }
+
 
     @Override
     public void onClick(View view) {
         switch (view.getId()){
-            case R.id.btnKonekte:
-                break;
+           // case R.id.btnKonekte:
+                //break;
 
             case R.id.tvRegisterLink:
                 startActivity(new Intent(this,RegisterActivity.class));
