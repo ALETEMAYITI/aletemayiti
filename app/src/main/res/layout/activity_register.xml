@@ -5,7 +5,8 @@
     android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/grad_bg">
 
 
     <ImageView
@@ -14,16 +15,17 @@
         android:layout_height="90dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:src="?android:attr/alertDialogIcon" />
+        android:src="?android:attr/alertDialogIcon"
+        app:srcCompat="@drawable/ic_warning_white_24dp" />
 
     <TextView
         android:id="@+id/tvlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15dp"
         android:layout_gravity="center_horizontal"
-        android:text="ALETMAYITI"
-        android:textStyle="bold"/>
+        android:layout_marginBottom="15dp"
+        android:text="@string/app_name"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvNom"
@@ -117,15 +119,9 @@
         android:layout_height="37dp"
         android:layout_marginBottom="35dp"
         android:layout_gravity="center_horizontal"
-        android:background="@android:color/holo_blue_light"
+        android:background="@color/colorPrimaryDark"
         android:text="ANREJISTRE"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
         android:textStyle="bold"/>
-
-
-
-
-
-
 </LinearLayout>

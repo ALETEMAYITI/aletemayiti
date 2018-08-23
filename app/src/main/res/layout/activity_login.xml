@@ -2,11 +2,12 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:padding="10dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/grad_bg"
+    >
 
     <ImageView
         android:id="@+id/ivImageLogo"
@@ -14,44 +15,43 @@
         android:layout_height="90dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:src="?android:attr/alertDialogIcon" />
+        android:background="@drawable/ic_warning_white_24dp" />
 
     <TextView
         android:id="@+id/tvlogo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50dp"
         android:text="ALETMAYITI"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvUserName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Imel oubyen nimewo telefòn ou"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-         />
+        android:layout_marginBottom="20dp" />
 
     <TextView
         android:id="@+id/tvPaskordKonek"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Kòd sekrè"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etPaskordKonek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
-        android:inputType="textPassword"/>
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnKonekte"
@@ -60,27 +60,28 @@
         android:layout_marginBottom="35dp"
         android:layout_marginLeft="60dp"
         android:background="@android:color/holo_blue_light"
+        android:onClick="btnKonekte"
         android:text="KONEKTE"
         android:textColor="@android:color/background_light"
         android:textSize="18sp"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvforget"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginBottom="20dp"
         android:text="Klike la si'w bliye Kòd ou"
-        android:layout_gravity="center_horizontal"
-        android:textStyle="bold"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/tvRegisterLink"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Kyere yon kont"
         android:layout_gravity="center_horizontal"
-        android:textStyle="bold"/>
+        android:text="Kyere yon kont"
+        android:textStyle="bold" />
 
 
 </LinearLayout>
